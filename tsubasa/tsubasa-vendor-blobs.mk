@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/tsubasa/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/sony/tsubasa/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/sony/tsubasa/proprietary/lib/libc.so:system/lib/libc.so \
     vendor/sony/tsubasa/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/sony/tsubasa/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/tsubasa/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
@@ -126,6 +127,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/sony/tsubasa/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/sony/tsubasa/proprietary/lib/libqdp.so:system/lib/libqdp.so \
+    vendor/sony/tsubasa/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/tsubasa/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/tsubasa/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/sony/tsubasa/proprietary/etc/firmware/modem.b00:system/etc/firmware/modem.b00 \
