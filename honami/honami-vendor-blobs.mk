@@ -43,8 +43,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/honami/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     vendor/sony/honami/proprietary/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
     vendor/sony/honami/proprietary/etc/sysmon.cfg:system/etc/sysmon.cfg \
+    vendor/sony/honami/proprietary/lib/libc.so:system/lib/libc.so \
     vendor/sony/honami/proprietary/lib/libcald_hal.so:system/lib/libcald_hal.so \
     vendor/sony/honami/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
+    vendor/sony/honami/proprietaty/lib/libril.so:system/lib/libril.so \
+    vendor/sony/honami/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/honami/proprietary/lib/libsysmon_jni.so:system/lib/libsysmon_jni.so \
     vendor/sony/honami/proprietary/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc \
     vendor/sony/honami/proprietary/usr/idc/clearpad_pen.idc:system/usr/idc/clearpad_pen.idc \
