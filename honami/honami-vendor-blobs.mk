@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/honami/proprietary/lib/libc.so:system/lib/libc.so \
     vendor/sony/honami/proprietary/lib/libcald_hal.so:system/lib/libcald_hal.so \
     vendor/sony/honami/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
-    vendor/sony/honami/proprietaty/lib/libril.so:system/lib/libril.so \
+    vendor/sony/honami/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/honami/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/honami/proprietary/lib/libsysmon_jni.so:system/lib/libsysmon_jni.so \
     vendor/sony/honami/proprietary/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc \
