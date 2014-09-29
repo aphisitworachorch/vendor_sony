@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/fusion3-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/sony/fusion3-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/sony/fusion3-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/sony/fusion3-common/proprietary/bin/system_monitor:system/bin/system_monitor \
     vendor/sony/fusion3-common/proprietary/bin/ta2bin:system/bin/ta2bin \
     vendor/sony/fusion3-common/proprietary/bin/ta_param_loader:system/bin/ta_param_loader \
@@ -108,7 +107,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
     vendor/sony/fusion3-common/proprietary/lib/libcredential-manager-service.so:system/lib/libcredential-manager-service.so \
     vendor/sony/fusion3-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
-    vendor/sony/fusion3-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/fusion3-common/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
     vendor/sony/fusion3-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/sony/fusion3-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
@@ -129,6 +127,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
     vendor/sony/fusion3-common/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
     vendor/sony/fusion3-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/sony/fusion3-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/sony/fusion3-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/sony/fusion3-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/sony/fusion3-common/proprietary/lib/libmercury.so:system/lib/libmercury.so \
     vendor/sony/fusion3-common/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
@@ -159,15 +159,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/sony/fusion3-common/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/sony/fusion3-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-<<<<<<< HEAD
-    vendor/sony/fusion3-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-=======
     vendor/sony/fusion3-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
->>>>>>> d7deda1... sony: move libqc-opt.so
     vendor/sony/fusion3-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
-    vendor/sony/fusion3-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-    vendor/sony/fusion3-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-    vendor/sony/fusion3-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     vendor/sony/fusion3-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/sony/fusion3-common/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/fusion3-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
@@ -177,6 +170,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/lib/libsysmon_idd.so:system/lib/libsysmon_idd.so \
     vendor/sony/fusion3-common/proprietary/lib/libsysmon_jni.so:system/lib/libsysmon_jni.so \
     vendor/sony/fusion3-common/proprietary/lib/libta.so:system/lib/libta.so \
+    vendor/sony/fusion3-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/sony/fusion3-common/proprietary/lib/sysmon/sysmon_batt_therm.so:system/lib/sysmon/sysmon_batt_therm.so \
     vendor/sony/fusion3-common/proprietary/lib/sysmon/sysmon_bl_therm.so:system/lib/sysmon/sysmon_bl_therm.so \
     vendor/sony/fusion3-common/proprietary/lib/sysmon/sysmon_charge_current_limit_level.so:system/lib/sysmon/sysmon_charge_current_limit_level.so \
@@ -225,4 +219,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/fusion3-common/proprietary/vendor/camera/SOI13BS2_IMX135.dat:system/vendor/camera/SOI13BS2_IMX135.dat \
     vendor/sony/fusion3-common/proprietary/vendor/camera/SOI13BS9.dat:system/vendor/camera/SOI13BS9.dat \
     vendor/sony/fusion3-common/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
-    vendor/sony/fusion3-common/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw
+    vendor/sony/fusion3-common/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/sony/fusion3-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so
