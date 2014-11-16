@@ -93,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
     vendor/sony/shinano-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/sony/shinano-common/proprietary/etc/pre_hw_config.sh:system/etc/pre_hw_config.sh \
-    vendor/sony/shinano-common/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_halctrl_plugin.so:system/lib/camera/libexcal_halctrl_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/camera/libexcal_idtctrl_plugin.so:system/lib/camera/libexcal_idtctrl_plugin.so \
     vendor/sony/shinano-common/proprietary/lib/hw/camera.vendor.qcom.so:system/lib/hw/camera.vendor.qcom.so \
@@ -102,7 +101,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/lib/lib_asb_tee.so:system/lib/lib_asb_tee.so \
     vendor/sony/shinano-common/proprietary/lib/libals.so:system/lib/libals.so \
     vendor/sony/shinano-common/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
-    vendor/sony/shinano-common/proprietary/lib/libbt-hci.so:system/lib/libbt-hci.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_chokoball.so:system/lib/libcacao_chokoball.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_client.so:system/lib/libcacao_client.so \
     vendor/sony/shinano-common/proprietary/lib/libcacao_common.so:system/lib/libcacao_common.so \
@@ -191,7 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
@@ -338,4 +335,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/shinano-common/proprietary/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/sony/shinano-common/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/sony/shinano-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so
+    vendor/sony/shinano-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    vendor/sony/shinano-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
